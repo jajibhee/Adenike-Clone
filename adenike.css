@@ -1,0 +1,422 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  color: gray;
+}
+h1,
+h2,
+h4 {
+  font-family: "Baskerville 10 Pro", Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.box {
+  background-image: url("Images/adenike-homepage.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  max-width: 100vw;
+  padding: 40px;
+  background-position: center center;
+}
+
+@media (max-width: 720px) {
+  .box {
+    background-position: right center;
+  }
+}
+
+.box img {
+  max-width: 100%;
+}
+
+.fa-bars {
+  position: fixed;
+  font-size: 50px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.menu :hover {
+  cursor: pointer;
+  color: #3549a0;
+}
+
+.inner-box {
+  left: 30px;
+  position: absolute;
+  bottom: 100px;
+  font-size: 45px;
+  color: white;
+  font-style: italic;
+}
+
+.box2 {
+  background-color: #d2d1d4;
+  width: 100%;
+}
+
+.innerbox-2 {
+  padding-top: 150px;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /* border: 1px solid black; */
+  -webkit-animation: mymove 5s infinite;
+  animation: mymove 5s infinite;
+}
+
+#what {
+  letter-spacing: 0.5rem;
+}
+.icon-quotes-right:before {
+  content: "\e978";
+  color: red;
+  font-size: 50px;
+}
+
+.book,
+.book-text {
+  box-sizing: border-box;
+}
+
+.book {
+  width: 50%;
+  padding: 0 5%;
+  padding-top: 40px;
+}
+
+.book img {
+  max-width: 100%;
+}
+
+.book-text {
+  padding-top: 60px;
+  width: 50%;
+  padding-right: 15%;
+}
+
+.story {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+.text1 {
+  font-family: Century, serif;
+  margin-bottom: 1em;
+  line-height: 1.7;
+  font-weight: normal;
+  font-size: 1.45em;
+}
+
+.innerbox-2-1 {
+  text-align: center;
+}
+
+.carousel {
+  text-align: center;
+}
+
+.preview {
+  padding-top: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+.fa-file-pdf,
+.fa-music,
+button span {
+  float: left;
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+}
+
+.fa-file-pdf,
+.fa-music {
+  border-right: 1px solid white;
+  line-height: 1;
+}
+
+.fa-file-pdf:before,
+.fa-music:before {
+  display: block;
+  line-height: 1;
+  font-size: 2rem;
+}
+button {
+  color: #fff;
+  background-color: #3549a0;
+  width: auto;
+  height: inherit;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  max-height: 100px;
+  overflow: hidden;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.buy {
+  margin-top: 80px;
+  text-align: center;
+}
+
+img.myLogos::before {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.logos {
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+}
+img.myLogos {
+  transition: ease-out 0.5s;
+}
+
+img.myLogos:hover {
+  transform: scale(0.95);
+  background-color: #3549a0;
+  cursor: pointer;
+}
+.about {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.inner-about {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.about-image {
+  width: 40%;
+  padding-left: 150px;
+}
+.about-text {
+  width: 60%;
+  padding-right: 210px;
+  padding-left: 150px;
+}
+
+.about-text h2 {
+  padding-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+.amputee {
+  background-color: #3549a0;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.inner-amputee {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.amputee-image {
+  width: 50%;
+}
+
+.amputee-image img {
+  /* take full space of the container */
+  width: 100%;
+}
+
+.amputee-text {
+  padding-top: 80px;
+  color: white;
+  width: 50%;
+  padding: 6rem 10em;
+  margin-bottom: 50px;
+}
+
+.amputee-text h4 {
+  font-size: 1.7em;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 12px;
+}
+.amputee-text p {
+  font-size: 1.4em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+.contact {
+  padding-top: 150px;
+  padding-left: 250px;
+  margin-bottom: 150px;
+}
+.contact h1 {
+  margin-top: 50px;
+  font-size: 3.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+.contact .SAE {
+  font-size: 1.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.contact p {
+  margin-top: 105px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Media Queries */
+
+@media (max-width: 720px) {
+  .innerbox-2 {
+    flex-wrap: wrap;
+  }
+
+  .book,
+  .book-text {
+    width: 100%;
+  }
+
+  .book-text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .inner-about {
+    flex-wrap: wrap;
+  }
+  .about-image {
+    width: 100%;
+    padding-left: 0;
+  }
+  .about-image img {
+    margin-bottom: 10em;
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .logos {
+    flex-direction: column;
+  }
+
+  .logos img {
+    width: auto;
+    max-width: 60%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .inner-amputee {
+    flex-wrap: wrap;
+  }
+  .amputee-image {
+    width: 100%;
+  }
+
+  .amputee-image img {
+    max-width: 100%;
+  }
+
+  .amputee-text {
+    width: 100%;
+    padding: 10%;
+  }
+
+  .contact {
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+/* carousel style the arrows are absolute to the container carousel, the left and right positions it to the margin and the padding shifts it a little bit from the margin. */
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.arrows {
+  padding-bottom: 1.5rem;
+}
+.fa-angle-right,
+.fa-angle-left {
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+#arrow-left {
+  position: absolute;
+  top: 50%;
+  float: left;
+  left: 0%;
+  padding-left: 2.5rem;
+}
+
+#arrow-right {
+  top: 50%;
+  position: absolute;
+  right: 0%;
+  padding-right: 2.5rem;
+  float: right;
+}
+
+.slide-text {
+  padding-top: 2.5rem;
+  border-bottom: 2px solid white;
+  border-radius: 8px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slide-text p {
+  font-size: 2.2rem;
+  padding-bottom: 2rem;
+}
