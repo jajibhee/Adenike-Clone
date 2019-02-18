@@ -1,3 +1,5 @@
+@import 'style.css';
+
 * {
   padding: 0px;
   margin: 0px;
@@ -28,6 +30,78 @@ h2 {
   background-position: center center;
 }
 
+.menu-btn{
+  position: fixed;
+  transition: all 0.5s ease-out;
+  /* right: 35px; */
+  left: 35px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu-btn.close {
+  transform: rotate(1.5turn);
+  /* transform-origin: 1% 1%; */
+}
+
+/* Rotate button lines */  
+.menu-btn.close .btn-line:nth-child(1) {
+    background: #3549a0;
+    transform: rotate(45deg) translate(5px, 5px); }
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0; }
+  .menu-btn.close .btn-line:nth-child(3) {
+    background: #3549a0;
+
+    transform: rotate(-45deg) translate(7px, -6px); }
+
+.btn-line{
+  background: #fff;
+  width: 2rem;
+  height: 4px;
+  transition: all 0.5s ease-out;
+  margin-bottom: 5px;
+}
+
+.nav-item{
+  color: #fff;
+}
+
+.menu{
+  position: fixed;
+  top: 10%;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+}
+.menu.show{
+  visibility: visible;
+}
+
+.menu-nav{
+  list-style: none;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;  
+  /* it pushes it to the  top above the whole screen view*/
+  transform: translate3d(0, -100%, 0); 
+
+  transition: all 0.3s ease-out; 
+}
+.menu-nav.show{
+  /* it brings it back to normal it to the  top above the whole screen view*/
+
+  transform: translate3d(0, 0, 0);
+}
+/* how do i add a blue class to the menu when it leaves the first box */
+.nav-item {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: .125rem;
+  color: #3549a0;
+}
+
 @media (max-width: 720px) {
   .box {
     background-position: right center;
@@ -46,10 +120,6 @@ h2 {
   margin-left: 40px;
 }
 
-.menu :hover {
-  cursor: pointer;
-  color: #3549a0;
-}
 
 .inner-box {
   left: 30px;
@@ -134,6 +204,10 @@ h2 {
   align-items: center;
 }
 
+.preview > h2{
+  padding-bottom: 1.2rem;
+}
+
 .fa-file-pdf,
 .fa-music,
 button span {
@@ -167,7 +241,6 @@ button {
   text-align: center;
   margin: 0 auto;
   display: inline-block;
-  max-height: 100px;
   overflow: hidden;
 }
 button:hover {
