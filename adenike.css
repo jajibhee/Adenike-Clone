@@ -33,15 +33,13 @@ h2 {
 .menu-btn{
   position: fixed;
   transition: all 0.5s ease-out;
-  /* right: 35px; */
   left: 35px;
   cursor: pointer;
   z-index: 3;
 }
 
 .menu-btn.close {
-  transform: rotate(1.5turn);
-  /* transform-origin: 1% 1%; */
+  transform: rotate(90deg);
 }
 
 /* Rotate button lines */  
@@ -492,4 +490,20 @@ img.myLogos:hover {
 .slide-text p {
   font-size: 2.2rem;
   padding-bottom: 2rem;
+}
+
+.dots{
+  max-width:100%;
+  margin-top: 20px;
+  /* background-color: #fff; */
+}
+
+.dot{
+  height: 10px;
+  display: inline-block;
+  margin:auto;
+  width: 10px;
+  border-radius: 50%;
+  padding: 10px 10px;
+  background-color: #3549a0;
 }

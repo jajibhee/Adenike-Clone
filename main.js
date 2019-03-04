@@ -66,7 +66,7 @@ arrowRight.addEventListener('click', () => {
 function nextSlide() {
     hideSlides(slides);
 
-    //now it will display the next slide too which has class of currentlyVisible.
+    //now it will display any slide which has class of currentlyVisible.
     let currentSlide = document.querySelector('.currentlyVisible');
     currentSlide.style.display = "block"
 
@@ -97,7 +97,9 @@ function prevSlide() {
 
 
     if (currentSlide.previousElementSibling == null) {
+        //this means if the next slide after current one which is null, doesnt exist...return to the last one.   
         nextElem = slides[slides.length - 1]
+
     } else {
         nextElem = currentSlide.previousElementSibling
     }
