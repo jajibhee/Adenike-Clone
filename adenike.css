@@ -1,4 +1,5 @@
-@import 'style.css';
+@import "style.css";
+@import "res.scss";
 
 * {
   padding: 0px;
@@ -30,7 +31,7 @@ h2 {
   background-position: center center;
 }
 
-.menu-btn{
+.menu-btn {
   position: fixed;
   transition: all 0.5s ease-out;
   left: 35px;
@@ -42,18 +43,21 @@ h2 {
   transform: rotate(90deg);
 }
 
-/* Rotate button lines */  
+/* Rotate button lines */
 .menu-btn.close .btn-line:nth-child(1) {
-    background: #3549a0;
-    transform: rotate(45deg) translate(5px, 5px); }
-  .menu-btn.close .btn-line:nth-child(2) {
-    opacity: 0; }
-  .menu-btn.close .btn-line:nth-child(3) {
-    background: #3549a0;
+  background: #3549a0;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  background: #3549a0;
 
-    transform: rotate(-45deg) translate(7px, -6px); }
+  transform: rotate(-45deg) translate(7px, -6px);
+}
 
-.btn-line{
+.btn-line {
   background: #fff;
   width: 2rem;
   height: 4px;
@@ -61,32 +65,32 @@ h2 {
   margin-bottom: 5px;
 }
 
-.nav-item{
+.nav-item {
   color: #fff;
 }
 
-.menu{
+.menu {
   position: fixed;
   top: 10%;
   width: 100%;
   opacity: 0.9;
   visibility: hidden;
 }
-.menu.show{
+.menu.show {
   visibility: visible;
 }
 
-.menu-nav{
+.menu-nav {
   list-style: none;
   width: 100%;
   height: 50vh;
-  overflow: hidden;  
+  overflow: hidden;
   /* it pushes it to the  top above the whole screen view*/
-  transform: translate3d(0, -100%, 0); 
+  transform: translate3d(0, -100%, 0);
 
-  transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
 }
-.menu-nav.show{
+.menu-nav.show {
   /* it brings it back to normal it to the  top above the whole screen view*/
 
   transform: translate3d(0, 0, 0);
@@ -96,7 +100,7 @@ h2 {
   padding-bottom: 15px;
   font-weight: bold;
   font-size: 1.5rem;
-  letter-spacing: .125rem;
+  letter-spacing: 0.125rem;
   color: #3549a0;
 }
 
@@ -117,7 +121,6 @@ h2 {
   margin-top: 20px;
   margin-left: 40px;
 }
-
 
 .inner-box {
   left: 30px;
@@ -202,7 +205,7 @@ h2 {
   align-items: center;
 }
 
-.preview > h2{
+.preview > h2 {
   padding-bottom: 1.2rem;
 }
 
@@ -492,16 +495,16 @@ img.myLogos:hover {
   padding-bottom: 2rem;
 }
 
-.dots{
-  max-width:100%;
+.dots {
+  max-width: 100%;
   margin-top: 20px;
   /* background-color: #fff; */
 }
 
-.dot{
+.dot {
   height: 10px;
   display: inline-block;
-  margin:auto;
+  margin: auto;
   width: 10px;
   border-radius: 50%;
   padding: 10px 10px;
